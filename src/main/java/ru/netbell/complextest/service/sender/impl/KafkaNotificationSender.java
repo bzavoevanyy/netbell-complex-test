@@ -13,6 +13,7 @@ public class KafkaNotificationSender implements NotificationSender {
 
     @Override
     public void sendNotification(final Notification notification) {
+        // TODO Логировать email пользователей, куда отправляется уведомление
         log.info("Notification sent by Kafka: {}, email addresses: {}", notification, List.of());
     }
 }
